@@ -1,0 +1,25 @@
+<div class="item-wrapper">
+    <form [formGroup]="noteForm"  (ngSubmit)="onSubmit()">  
+        <p>  
+        <label for="name">Title</label> 
+        <input type="text" id="name" name="name" formControlName="name" class="form-control">  
+        <span *ngIf="!isValid" id="enter-title">Please enter a title</span> 
+        </p>
+        <div class="form-group" formArrayName="tasks">  
+        <p>Tasks</p>  
+        <div class="task-wrapper" *ngFor="let task of tasks().controls; let i=index" [formGroupName]="i">  
+            <input type="text" formControlName="task" class="form-control">  
+            <button (click)="removeTask(i)" class="btn btn-danger">Remove</button>  
+        </div>  
+        </div>  
+        
+        <div class="test">
+            <button type="submit" class="btn btn-success">Submit</button> &zwnj; 
+            <button (click)="onCancel()" type="button" class="btn btn-danger">Cancel</button> &zwnj;
+            <button type="button" (click)="addTask()" class="btn btn-primary" >Add new task</button>
+        </div>
+    </form>  
+</div>
+
+
+

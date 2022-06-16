@@ -1,0 +1,155 @@
+#item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #item {
+        width: 80%;
+        height: auto;
+        background-color: #c5c5c5;
+        margin-left: 10%;
+        padding: 0.5%;
+        border-radius: 15px;
+        border: 2px solid #949494;
+        cursor: pointer;
+        margin-top: 1.5%;
+        position: relative;
+    };
+
+    #item:hover {
+        width: 80%;
+        height: auto;
+        background-color: rgb(167, 167, 167);
+        margin-left: 10%;
+        padding: 0.5%;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 2px solid rgb(148, 148, 148);
+        margin-top: 1.5%;
+        position: relative;
+    }
+    #item-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    };
+
+}
+
+@media screen and (max-width: 650) {
+    #item {
+        width: 80%;
+        height: auto;
+        background-color: #c5c5c5;
+        margin-left: 10%;
+        padding: 0.5%;
+        border-radius: 15px;
+        border: 2px solid #949494;
+        cursor: pointer;
+        margin-top: 1.5%;
+        position: relative;
+    };
+
+    #item:hover {
+        width: 80%;
+        height: auto;
+        background-color: rgb(167, 167, 167);
+        margin-left: 10%;
+        padding: 0.5%;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 2px solid rgb(148, 148, 148);
+        margin-top: 1.5%;
+        position: relative;
+    }
+    #item-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    };
+
+}
+
+.task-btn {
+    border-radius: 30px;
+    transform: scale(0.65, 0.6);
+    display: none; 
+    height: 105%;
+    top: -19%;
+    position: relative;
+}
+
+#item {
+    width: 25%;
+    height: auto;
+    background-color: rgb(197, 197, 197);
+    margin-left: 6%;
+    padding: 0.5%;
+    border-radius: 15px;
+    border: 2px solid rgb(148, 148, 148);
+    cursor: pointer;
+    margin-top: 1.5%;
+    position: relative;
+}
+
+#item:hover {
+    width: 25%;
+    height: auto;
+    background-color: rgb(167, 167, 167);
+    margin-left: 6%;
+    padding: 0.5%;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid rgb(148, 148, 148);
+    margin-top: 1.5%;
+    position: relative;
+}
+
+.item-tasks {
+    display: flex;
+    justify-content:space-between;
+    padding-left: 2%;
+    height: 35px;
+}
+
+.item-tasks:hover  .task-btn {
+    display: block;
+}
+
+// [id^= task-p] {
+// text-decoration: none;
+// }
+
+.item-tasks:hover {
+    color: white;
+    padding-left: 2%;
+}
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-btn {
+    border-radius: 50%;
+    transform: scale(0.6, 0.5) translate(60%, -85%);
+}
+
+.item-task-toggle {
+    text-decoration: line-through;
+}
+
+h3 {
+    font-size: 1.25rem
+}
+
+h5 {
+    font-size: 1rem
+}
+
