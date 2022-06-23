@@ -8,7 +8,7 @@
 }
 
 #wrapper {
-    height: auto;
+    height: 100%;
 }
 
 .add-btn {
@@ -16,4 +16,8 @@
     justify-content: center;
     position: relative;
     margin-top: 5.5%;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
 }

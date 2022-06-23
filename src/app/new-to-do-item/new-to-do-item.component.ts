@@ -19,12 +19,14 @@ export class NewToDoItemComponent implements OnInit, OnDestroy {
   noteForm: FormGroup;
   
   constructor(private noteService: NoteService, private router: Router, private route: ActivatedRoute, private fb: FormBuilder) {
+
     this.noteForm = this.fb.group({  
       name: new FormControl('', [
         Validators.required,
       ]), 
       tasks: this.fb.array([])   
     });
+    
   }
 
   ngOnInit(): void {
@@ -42,6 +44,7 @@ export class NewToDoItemComponent implements OnInit, OnDestroy {
         this.isEdit = false;
       };
     });
+
   }
 
   tasks() : FormArray {  

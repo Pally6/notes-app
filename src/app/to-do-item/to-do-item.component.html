@@ -1,15 +1,19 @@
 <div id="item-container" >
     <div id="item"  *ngFor="let item of items; let i = index">
         <div>
-            <div class="item-title" (click)="onNavigate(i)">
-                <h3>{{item.name}} </h3>
+            <div class="item-title-and-btn" (click)="onNavigate(i)">
+                <div class="item-title">
+                    <h3><p>
+                        {{item.name}} 
+                    </p></h3>
+                </div>
                 <button class="delete-btn btn btn-danger" (click)="onDeleteNote(i)">X</button>
             </div>
             <hr>
             <div (click)="taskToggle(i, j)" *ngFor="let task of item.tasks; let j = index">
                 <div class="item-tasks" >
                     <h5 style="text-decoration: none;" id="task-p{{i}}-{{j}}">{{task}}</h5> 
-                    <button class="task-btn btn btn-danger" type="button" (click)="onDeleteTask(i, j)" >X</button>
+                    <div class="task-btn" (click)="onDeleteTask(i, j)" >X</div>
                 </div>
             </div>
         </div>

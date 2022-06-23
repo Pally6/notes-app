@@ -45,6 +45,10 @@ font-weight: 400;
     padding-bottom: 10px;
 }
 
+.btn-remove {
+    margin-left: 0.8%;
+}
+
 @media screen and (max-width: 1400px) {
 
     .item-wrapper {
@@ -84,6 +88,10 @@ font-weight: 400;
         font-weight: 500;
         opacity: 0.995;
         height: auto;
+    };
+
+    .note-form {
+        padding: 2%;
     };
     
 }
